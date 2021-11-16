@@ -10,8 +10,10 @@ function showName(name) {
 showName("Patricia");
 
 
-// N2 E1
-//Mostra per consola el nom i cognoms de l'usuari mitjançant template literals, guardant-los en variables i referenciant-les en la impressió del missatge.
+/* N2 E1
+Mostra per consola el nom i cognoms de l'usuari mitjançant template literals, guardant-los en variables i 
+referenciant-les en la impressió del missatge.*/
+
 var name1 = `Patricia Gonzalez`;
 var name2 = `Patricia Llovera`;
 var name3 = `Patricia Garcia`;
@@ -42,8 +44,13 @@ showName(name6);
 
 
 // N3 E1
-//Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera que cada funció compti del 0 al 9 per la consola. 
-//Invoca cada funció de l'array iterativament. Haurà de mostrar-se per consola el compte del 0 al 9 deu vegades.
+/*Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera que cada funció compti del 0 al 9 
+per la consola. Invoca cada funció de l'array iterativament. Haurà de mostrar-se per consola el compte del 0 
+al 9 deu vegades.*/
 
 // N3 E2
-// Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari rebut com a paràmetre.
+/*Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari 
+rebut com a paràmetre.*/
+
+(function () { console.log('Esta función no tiene nombre y\ se ejecutara inmediatamente'); }());
+(function (uno, dos, tres) { console.log(uno); console.log(dos); console.log(tres); }(1, 2, 3));
