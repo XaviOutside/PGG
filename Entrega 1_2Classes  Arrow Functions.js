@@ -28,12 +28,22 @@ dirNom que imprimeixi per consola el paràmetre 'nom'.
 Invoca el mètode dirNom des de fora de la classe.*/
 
 class Persona {
-   
-   dirNom(nom) {
-        console.log("Hi" + nom);
+
+    constructor(nom) {
+        this.nom = nom;
     }
+    dirNom(nom) {
+        return nom;
     }
-console.log(dirNom("Pol"));
+    //function dirNom(nom) {
+    //console.log("Hi " + nom);
+}
+
+
+//let dirNom : nom = new Persona; 
+//patricia.dirNom();
+Persona.dirNom();
+
 
 /*  Nivell 3 Exercici 1
 Escriu una function creadora d'objectes que faci instàncies d'una classe abstracta.
