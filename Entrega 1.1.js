@@ -35,10 +35,9 @@ function showName(name5) {
 
    var name5 = 'Patricia González'
 
-
    var name6 = `My name is ${showName(name5)}`;
    console.log(name6);
-    }
+}
 showName(name6);
 
 

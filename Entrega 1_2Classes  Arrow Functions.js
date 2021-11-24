@@ -4,7 +4,7 @@
 Mostra per la consola el resultat d'una arrow function autoinvocable que sumi dos nombres.*/
 
 (() => {
-    console.log(1 + 1); 
+    console.log(1 + 1);
 })();
 
 
@@ -34,11 +34,11 @@ class Persona {
 
     static dirNom(nom) {
         console.log(nom);
-            return nom;
-             }
-     }
-     Persona.dirNom("Pol");
-  
+        return nom;
+    }
+}
+Persona.dirNom("Pol");
+
 
 /*  Nivell 3 Exercici 1
 Escriu una function creadora d'objectes que faci instàncies d'una classe abstracta.
