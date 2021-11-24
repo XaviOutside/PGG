@@ -30,15 +30,14 @@ user(name1, name2, name3, name4);
 //Invoca una funció que retorni un valor des de dins d'una template literal.
 
 
+ function showName(){
+    var name5 = 'Patricia González'
+    var name6 = `My name is ${name5}`;
+     return name6;
+ }
+ 
+ console.log(`Hola ${showName()}`);
 
-function showName(name5) {
-
-   var name5 = 'Patricia González'
-
-   var name6 = `My name is ${showName(name5)}`;
-   console.log(name6);
-}
-showName(name6);
 
 
 // N3 E1
@@ -48,7 +47,10 @@ al 9 deu vegades.*/
 
 // N3 E2
 /*Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari 
-rebut com a paràmetre.*/
+rebut com a paràmetre.
+
+function () { console.log('Esta función no tiene un nombre') }
 
 (function () { console.log('Esta función no tiene nombre y\ se ejecutara inmediatamente'); }());
-(function (uno, dos, tres) { console.log(uno); console.log(dos); console.log(tres); }(1, 2, 3));
+
+(function (uno, dos, tres) { console.log(uno); console.log(dos); console.log(tres); }(1, 2, 3));*/
