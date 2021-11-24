@@ -2,13 +2,12 @@
 Crea una funció que mostri per consola el nom d'usuari al invocar-la passant-li el nom com a paràmetre.*/
 
 function showName(name) {
-   console.log("Hi " + name);
-}
+    console.log("Hi " + name);
+ }
+ 
+ showName("Patricia");
 
-showName("Patricia");
-
-
-/* N2 E1
+ /*N2 E1
 Mostra per consola el nom i cognoms de l'usuari mitjançant template literals, guardant-los en variables i 
 referenciant-les en la impressió del missatge.*/
 
@@ -23,32 +22,26 @@ function user(name1, name2, name3, name4) {
 
 user(name1, name2, name3, name4);
 
-
 /* N2 E2
-Invoca una funció que retorni un valor des de dins d'una template literal.*/
+Invoca una funció que retorni un valor des de dins d'una template literal.
 
-
- function showName(){
+function showName(){
     var name5 = 'Patricia González'
     var name6 = `My name is ${name5}`;
      return name6;
  }
  
- console.log(`Hola ${showName()}`);
+ console.log(`Hola ${showName()}`);*/
 
-
-
-// N3 E1
-/*Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera que cada funció compti del 0 al 9 
+ /* N3 E1
+Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera que cada funció compti del 0 al 9 
 per la consola. Invoca cada funció de l'array iterativament. Haurà de mostrar-se per consola el compte del 0 
 al 9 deu vegades.*/
 
-// N3 E2
-/*Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari 
-rebut com a paràmetre.
+ /*N3 E2
+Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari
+rebut com a paràmetre.*/
 
-function () { console.log('Esta función no tiene un nombre') }
-
-function () { console.log('Esta función no tiene nombre y\ se ejecutara inmediatamente'); }());
-
-(function (uno, dos, tres) { console.log(uno); console.log(dos); console.log(tres); }(1, 2, 3));*/
+saludar = (function (name) {
+    console.log(`¡Hola, ${name}!`);
+  })("Patricia");
