@@ -1,18 +1,16 @@
+
 /* Nivell 1 Exercici 1
+
 Mostra per la consola el resultat d'una arrow function autoinvocable que sumi dos nombres.*/
 
-
-
 (() => {
-    console.log(1 + 1);
+    console.log(1 + 1); 
 })();
 
 
 /* Nivell 2 Exercici 1
-Crea una arrow function que, 
-rebent un paràmetre,
- retorni un objecte amb un atribut que tingui com a valor
-el paràmetre rebut..*/
+Crea una arrow function que, rebent un paràmetre, retorni un objecte amb un atribut que tingui com a
+ valor el paràmetre rebut.*/
 
 var func2 = y => {
     var myObj = { atrib1: y };
@@ -27,23 +25,20 @@ La classe inclourà un mètode
 dirNom que imprimeixi per consola el paràmetre 'nom'. 
 Invoca el mètode dirNom des de fora de la classe.*/
 
+// Declaración de una clase
 class Persona {
 
     constructor(nom) {
         this.nom = nom;
     }
-    dirNom(nom) {
-        return nom;
-    }
-    //function dirNom(nom) {
-    //console.log("Hi " + nom);
-}
 
-
-//let dirNom : nom = new Persona; 
-//patricia.dirNom();
-Persona.dirNom();
-
+    static dirNom(nom) {
+        console.log(nom);
+            return nom;
+             }
+     }
+     Persona.dirNom("Pol");
+  
 
 /*  Nivell 3 Exercici 1
 Escriu una function creadora d'objectes que faci instàncies d'una classe abstracta.
