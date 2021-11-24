@@ -25,19 +25,19 @@ La classe inclourà un mètode
 dirNom que imprimeixi per consola el paràmetre 'nom'. 
 Invoca el mètode dirNom des de fora de la classe.*/
 
-// Declaración de una clase
 class Persona {
 
     constructor(nom) {
         this.nom = nom;
     }
-
-    static dirNom(nom) {
+    
+    dirNom(nom) {
         console.log(nom);
-        return nom;
-    }
+       }
 }
-Persona.dirNom("Pol");
+
+var patricia = new Persona("Pol");
+patricia.dirNom("Pol");
 
 
 /*  Nivell 3 Exercici 1
