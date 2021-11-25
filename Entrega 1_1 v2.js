@@ -44,6 +44,12 @@ let arrayFunc = new Array(9); //crea array buida q tindrà 10 posicions
 
 // TODO creo funcion q cree funciones
 
+for (item)
+
+function createFunc(){
+
+
+    return this.altura * this.anchura;
 
 
 // todo omplir-la amb bucle (exemple s'omple amb "func1")
