@@ -42,47 +42,22 @@ patricia.dirNom("Pol");
 
 /*  Nivell 3 Exercici 1
 Escriu una function creadora d'objectes que faci instàncies d'una classe abstracta.
-Invoca-la amb diferents definicions.
+Invoca-la amb diferents definicions.*/
 
-@constructor
- @abstract
- */
-var Animal = function () { };
+var Vehículo = function () { };// abstracta
 
-/**
- @abstract
- */
-var Cat = function () {
-    Animal.apply(this, arguments);
-};
-Cat.prototype = Object.create(Animal.prototype);
-Cat.prototype.constructor = Cat;
+Vehículo.prototype.frenar = function () { console.log("Voy muy rápido"); };
 
-Cat.prototype.hablar = function () {
-    console.log('meow');
-}
+var Coche = function () { Vehículo.apply(this, arguments); };
 
-var cat = new Cat();
+Coche.prototype = Object.create(Vehículo.prototype);
 
+var Moto = function () { Vehículo.apply(this, arguments); };
 
+Moto.prototype = Object.create(Vehículo.prototype);
 
-/**
- @constructor
- @abstract
- */
-var Animal = function () { };// abstracta
-Animal.prototype.comer = function () { console.log("Tengo hambre"); };
+var coche = new Coche();
+coche.frenar();
 
-var Gato = function () { Animal.apply(this, arguments); };
-
-Gato.prototype = Object.create(Animal.prototype);
-
-var Perro = function () { Animal.apply(this, arguments); };
-
-Perro.prototype = Object.create(Animal.prototype);
-
-var gato = new Gato();
-gato.comer();
-
-var perro = new Perro();
-perro.comer();
+var moto = new Moto();
+moto.frenar();
