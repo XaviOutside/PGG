@@ -1,26 +1,29 @@
-/*Els mòduls natius de Node.js permeten als desenvolupadors d'aplicacions i mòduls dur a terme diferents 
-tasques: gestió d'arxius, processat d'informació, codificació i encriptació, entre d'altres. Necessitaràs 
+/*Els mòduls natius de Node.js permeten als desenvolupadors d'aplicacions i mòduls dur a terme diferents
+tasques: gestió d'arxius, processat d'informació, codificació i encriptació, entre d'altres. Necessitaràs
  donar un cop d'ull a la documentació de Node! Utilitza l'intèrpret de node en els exercicis.*/
 
 /* N1 Ex1
 Crea una funció que imprimeixi recursivament un missatge per la consola amb demores d'un segon.*/
 
-- Exercici 2
+/* N1 Ex2
 Crea una funció que, en executar-la, escrigui una frase en un fitxer.
 
-- Exercici 3
+/* N1 Ex3
 Crea una altra funció que mostri per consola el contingut del fitxer de l'exercici anterior.
 
-Nivell 2
-- Exercici 1
-Crea una funció que comprimeixi el fitxer del nivell 1.
+/* N2 Ex1
+Crea una funció que comprimeixi el fitxer del nivell 1.*/
 
-- Exercici 2
+/* N1 Ex2
 
-Crea una funció que llisti per la consola el contingut del directori d'usuari de l'ordinador utilizant Node Child Processes.
-Nivell 3
-- Exercici 1
-Crea una funció que creï dos fitxers codificats en hexadecimal i en base64 respectivament, a partir del fitxer del nivell 1
-Crea una funció que guardi els fitxers del punt anterior, ara encriptats amb l'algorisme aes-192-cbc, i esborri els fitxers inicials
-Crea una altra funció que desencripti i descodifiqui els fitxers de l'apartat anterior tornant a generar una còpia de l'inicial
-Inclou un README amb instruccions per a l'execució de cada part
+Crea una funció que llisti per la consola el contingut del directori d'usuari de l'ordinador
+utilizant Node Child Processes.*/
+
+/* N3 Ex1
+Crea una funció que creï dos fitxers codificats en hexadecimal i en base64 respectivament, a partir del
+fitxer del nivell 1
+Crea una funció que guardi els fitxers del punt anterior, ara encriptats amb l'algorisme aes-192-cbc,
+i esborri els fitxers inicials
+Crea una altra funció que desencripti i descodifiqui els fitxers de l'apartat anterior tornant a
+generar una còpia de l'inicial
+Inclou un README amb instruccions per a l'execució de cada part*/
