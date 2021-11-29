@@ -38,15 +38,23 @@ Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera que 
 per la consola. Invoca cada funció de l'array iterativament. Haurà de mostrar-se per consola el compte del 0 
 al 9 deu vegades.*/
 
-let arrayFunc = new Array(9); //crea array buida q tindrà 10 posicions
+//let arrayFunc = new Array(9); //crea array buida q tindrà 10 posicions
+let arrayFunc = [];
+let i = 0;
 
-function contar() {
-    console.log(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+let contar = func => {
+    for (i = 0; i <= 2; i++) {
+        console.log(i);
+    }
+    console.log("fin")
 }
 
-for (var i = 0; i <= 9; i++) {
-    arrayFunc.push(contar());
+while (arrayFunc.length <= 2) {
+    arrayFunc.push(contar);
+   
 }
+console.log(arrayFunc);
+
 
 /*N3 E2
 Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari
