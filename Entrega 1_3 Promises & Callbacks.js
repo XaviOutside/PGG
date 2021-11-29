@@ -16,12 +16,11 @@ function n1e1(parametroResolve, parametroReject) {
     });
 }
 
-n1e1("Es mayor que 5.", "Es menor que 5.").then(parametroResolve => console.log(parametroResolve))
+n1e1("És més gran que 5.", "És menor que 5.").then(parametroResolve => console.log(parametroResolve))
     .catch(parametroReject => console.error(parametroReject));
 
 /* N1 E2 Crea una arrow function que rebi un paràmetre i una funció callback i li passi a la funció 
-un missatge
-o un altre (que s'imprimirà per consola) en funció del paràmetre rebut.*/
+un missatge o un altre (que s'imprimirà per consola) en funció del paràmetre rebut.*/
 
 funcioArrow = ptexte => console.log(ptexte);
 
@@ -29,12 +28,11 @@ function funcioN1E2(callback) {
     funcioArrow("Cridem a la funció")
     callback();
 }
-funcioN1E2(() => console.log("Programa finalizado."));
+funcioN1E2(() => console.log("Programa finalitzat."));
 
 /* N2 E1 Donats els objectes employees i salaries, crea una arrow function getEmployee que retorni 
-una Promise 
-efectuant la cerca en l'objecte pel seu id.
-*/
+una Promise efectuant la cerca en l'objecte pel seu id */
+
 let employees = [{
     id: 1,
     name: 'Linux Torvalds'
@@ -72,16 +70,16 @@ getEmployee = id => {
         }
     })
 };
-
-
-getEmployee(2).then(id => console.log("Encontrado"))
-    .catch(id => console.error("No encontrado"));
-//
+getEmployee(2).then(id => console.log("Trobat"))
+    .catch(id => console.error("No trobat"));
 
 /* N2 E2 Crea una altra arrow function getSalary que rebi com a paràmetre un objecte employee i retorni el
 seu salari.*/
-
-
+var employee = new Object();
+getSalary = employee => {
+    return salary;
+    };
+ 
 
 /* N2 E3 Invoca la primera funció getEmployee i després getSalary niant l'execució de les dues promises.*/
 

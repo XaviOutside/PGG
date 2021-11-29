@@ -19,6 +19,9 @@ var func2 = y => {
 
 func2("Hola");
 
+
+
+
 /* Nivell 2 Exercici 2
 Crea una classe Persona que rebi un paràmetre 'nom' al ser instanciada. 
 La classe inclourà un mètode

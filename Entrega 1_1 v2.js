@@ -42,7 +42,7 @@ al 9 deu vegades.*/
 let arrayFunc = [];
 let i = 0;
 
-let contar = func => {
+let contar = _ => {
     for (i = 0; i <= 2; i++) {
         console.log(i);
     }
@@ -53,6 +53,9 @@ while (arrayFunc.length <= 2) {
     arrayFunc.push(contar);
    
 }
+for (i = 0; i <= 2; i++) {
+    arrayFunc.forEach(contar);
+   }
 console.log(arrayFunc);
 
 
