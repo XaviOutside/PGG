@@ -78,10 +78,15 @@ seu salari.*/
 var employee = new Object();
 getSalary = employee => {
     return salary;
-    };
- 
+};
+
 
 /* N2 E3 Invoca la primera funció getEmployee i després getSalary niant l'execució de les dues promises.*/
+
+getEmployee()
+    .then(id => console.log("Trobat"))
+        .catch(id => console.error("No trobat"));
+    
 
 
 

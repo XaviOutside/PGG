@@ -41,13 +41,14 @@ al 9 deu vegades.*/
 //let arrayFunc = new Array(9); //crea array buida q tindrà 10 posicions
 let arrayFunc = [];
 let i = 0;
-
+/*
 let contar = _ => {
-    for (i = 0; i <= 2; i++) {
+    for (i = 0; i <= 3; i++) {
         console.log(i);
     }
     console.log("fin")
 }
+
 
 while (arrayFunc.length <= 2) {
     arrayFunc.push(contar);
@@ -57,7 +58,13 @@ for (i = 0; i <= 2; i++) {
     arrayFunc.forEach(contar);
    }
 console.log(arrayFunc);
+console.log([2]);
 
+*/
+let contar = function contarFunc() {
+
+
+}
 
 /*N3 E2
 Crea una funció anònima autoinvocable igualada a una variable que mostri per consola el nom de l'usuari
