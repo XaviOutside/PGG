@@ -75,20 +75,43 @@ getEmployee(2).then(id => console.log("Trobat"))
 
 /* N2 E2 Crea una altra arrow function getSalary que rebi com a paràmetre un objecte employee i retorni el
 seu salari.*/
-var employee = new Object();
 getSalary = employee => {
-    return salary;
+    for (let i = 0; i < salaries.length; i++) {
+        if (salaries[i].id == employee.id) {
+            return salaries[i].salary;
+        }
+    }
 };
 
+let employee = new Object();
+employee.id = 4;
+console.log("L'Empleat te un salary de: " + getSalary(employee));
 
 /* N2 E3 Invoca la primera funció getEmployee i després getSalary niant l'execució de les dues promises.*/
 
-getEmployee()
-    .then(id => console.log("Trobat"))
-        .catch(id => console.error("No trobat"));
-    
 
+getEmployee(2)
+    .then(id => {
+        console.log("Trobat amb el id: " + id);
+        let employeeObject = new Object();
+        employeeObject.id = id;
+        return employeeObject;
+    })
+    .then(employeeObject => getSalary(employeeObject))
+    .then(salary => console.log("El seu salary es: " + salary))
+    .catch(id => console.error("No trobat"));
 
 
 /* N3 E1 Fixa un element catch a la invocació del nivell anterior que capturi qualsevol error i el
  mostri per  la consola.*/
+
+getEmployee(4)
+    .then(id => {
+        console.log("Trobat amb el id: " + id);
+        let employeeObject = new Object();
+        employeeObject.id = id;
+        return employeeObject;
+    })
+    .then(employeeObject => getSalary(employeeObject))
+    .then(salary => console.log("El seu salary es: " + salary))
+    .catch(id => console.error("No trobat"));
