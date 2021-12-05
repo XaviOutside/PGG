@@ -34,9 +34,47 @@ let salaries = [{
     salary: 2000
 }];
 
+getEmployee = id => {
+    return new Promise((resolve, reject) => {
+        let i = 0;
+        for (i; i < employees.length; i++) {
+            if (employees[i].id == id) {
+                resolve(id);
+                break;
+            }
+        }
+        if (i >= employees.length) {
+            reject(id);
+        }
+    })
+};
+
+getSalary = id => {
+    return new Promise((resolve, reject) => {
+        let i = 0;
+        for (i; i < salaries.length; i++) {
+            if (salaries[i].id == id) {
+                resolve(id);
+                break;
+            }
+        }
+        if (i >= salaries.length) {
+            reject(id);
+        }
+    })
+};
+
 /* N1 E2
 Crea una funció asíncrona que rebi un id d'empleat i imprimeixi per pantalla el nom de l'empleat i el seu 
 salari, usant les funcions que has definit a l'exercici anterior */
+
+async function n1e2(id){
+    employeeId = await getEmployee(id);
+    salaryId = await getSalary(employeeId);
+    console.log(`Empleat ${employees[employeeId].name} amb salari ${salaries[salaryId].salary}`);
+}
+
+n1e2(1);
 
 // TODO crea una arrow function getEmployee que retorni una Promise efectuant la cerca en l'objecte pel seu id.
 // TODO crea una arrow function getEmployee que retorni una Promise efectuant la cerca en l'objecte pel seu id.
@@ -44,6 +82,18 @@ salari, usant les funcions que has definit a l'exercici anterior */
 /* N2 E1
 Crea una nova funció asíncrona que cridi a una altra que retorni una Promise que efectuï la seva funció
  resolve() després de 2 segons de la seva invocació */
+
+ n2e1function2 = () => {
+    return new Promise(resolve => {
+        setTimeout(() => resolve('2 seconds later...'), 2000)
+      })
+ }
+
+ async function n2e1() {
+    console.log(await n2e1function2());
+ }
+
+ n2e1();
 
 // TODO Crea una nova funció asíncrona 
 // TODO que cridi a una altra 
